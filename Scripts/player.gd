@@ -98,7 +98,7 @@ func _physics_process(delta):
 		handle_movement_collision(collision)
 
 	move_and_slide()
-
+#hi
 func _process(delta):
 	if global_position.x > camera_sync.global_position.x && should_camera_sync:
 		camera_sync.global_position.x = global_position.x
