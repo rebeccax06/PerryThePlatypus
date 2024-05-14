@@ -1,9 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://dl1yh0nllbjk5"]
+[gd_scene load_steps=28 format=3 uid="uid://dl1yh0nllbjk5"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_i28to"]
 [ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Assets/Sprites/Mario_Small_Idle.png" id="1_rbppx"]
 [ext_resource type="Texture2D" uid="uid://bmxxy0rlchake" path="res://Assets/Sprites/pixil-frame-0.png" id="2_2abal"]
 [ext_resource type="Shape2D" uid="uid://cta002cfcr0l2" path="res://Resources/CollisionShapes/small_mario_collision_shape.tres" id="2_2r7cn"]
+[ext_resource type="Texture2D" uid="uid://ihc01mduemgy" path="res://Assets/Sprites/Ferb_Big_Idle.png" id="2_p5qfq"]
 [ext_resource type="Texture2D" uid="uid://ct8uqpacoxaq1" path="res://Assets/Sprites/Mario_Big_Idle.png" id="2_s57qn"]
 [ext_resource type="Texture2D" uid="uid://c3njnoy5owfh3" path="res://Assets/Sprites/Mario_Big_Jump.png" id="3_l1ryk"]
 [ext_resource type="Texture2D" uid="uid://crqgheu7ndoxs" path="res://Assets/Sprites/Mario_Big_Pole.png" id="4_1qh5m"]
@@ -30,7 +31,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_s57qn")
+"texture": ExtResource("2_p5qfq")
 }],
 "loop": true,
 "name": &"big_idle",
@@ -270,7 +271,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"small_run"
+animation = &"big_idle"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
