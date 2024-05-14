@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://ct8uqpacoxaq1" path="res://Assets/Sprites/Mario_Big_Idle.png" id="2_s57qn"]
 [ext_resource type="Texture2D" uid="uid://c3njnoy5owfh3" path="res://Assets/Sprites/Mario_Big_Jump.png" id="3_l1ryk"]
 [ext_resource type="Texture2D" uid="uid://crqgheu7ndoxs" path="res://Assets/Sprites/Mario_Big_Pole.png" id="4_1qh5m"]
-[ext_resource type="Texture2D" uid="uid://dvnr77h30cjn6" path="res://Assets/Sprites/Mario_Big_Run1.png" id="5_ksknq"]
-[ext_resource type="Texture2D" uid="uid://biwgmc04ug3tt" path="res://Assets/Sprites/Mario_Big_Run2.png" id="6_ooxt2"]
-[ext_resource type="Texture2D" uid="uid://cxxi757iq1gnv" path="res://Assets/Sprites/Mario_Big_Run3.png" id="7_0bxdb"]
+[ext_resource type="Texture2D" uid="uid://ces27vc120xhl" path="res://Assets/Sprites/Ferb_Big_Run1.png" id="5_vommu"]
+[ext_resource type="Texture2D" uid="uid://cgywsr16mhtre" path="res://Assets/Sprites/Ferb_Big_Run2.png" id="6_mffh1"]
+[ext_resource type="Texture2D" uid="uid://boyt5125elmj7" path="res://Assets/Sprites/Ferb_Big_Run3.png" id="7_ocbin"]
 [ext_resource type="Texture2D" uid="uid://k303fjvwyalc" path="res://Assets/Sprites/Mario_Big_Slide.png" id="8_tamvh"]
 [ext_resource type="Texture2D" uid="uid://4axg8se7m40x" path="res://Assets/Sprites/Mario_Shooting_Idle.png" id="9_thlrs"]
 [ext_resource type="Texture2D" uid="uid://vmaqhbv8xamx" path="res://Assets/Sprites/phineas death.png" id="10_sd5qy"]
@@ -55,13 +55,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_ksknq")
+"texture": ExtResource("5_vommu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_ooxt2")
+"texture": ExtResource("6_mffh1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_0bxdb")
+"texture": ExtResource("7_ocbin")
 }],
 "loop": true,
 "name": &"big_run",
@@ -271,7 +271,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"small_to_big"
+animation = &"big_run"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
