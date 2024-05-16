@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ces27vc120xhl"
-path="res://.godot/imported/Ferb_Big_Run1.png-2b9182d2cc46eafb78ff69ab5f42b1ff.ctex"
+uid="uid://jov57dp02lgt"
+path="res://.godot/imported/Ferb Run3.png-de7f646bb2923b508904213ee592817a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Ferb_Big_Run1.png"
-dest_files=["res://.godot/imported/Ferb_Big_Run1.png-2b9182d2cc46eafb78ff69ab5f42b1ff.ctex"]
+source_file="res://Assets/Sprites/Ferb Run3.png"
+dest_files=["res://.godot/imported/Ferb Run3.png-de7f646bb2923b508904213ee592817a.ctex"]
 
 [params]
 
