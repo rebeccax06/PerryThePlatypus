@@ -21,8 +21,8 @@
 [ext_resource type="Texture2D" uid="uid://cipjmquw1tlrv" path="res://Assets/Sprites/Mario_Shooting_Run2.png" id="15_shaw8"]
 [ext_resource type="Texture2D" uid="uid://daqnle02fss6v" path="res://Assets/Sprites/Mario_Shooting_Run3.png" id="16_l8hos"]
 [ext_resource type="Texture2D" uid="uid://1w6lqgnlyqo2" path="res://Assets/Sprites/Mario_Shooting-Slide.png" id="17_cmrh3"]
-[ext_resource type="Texture2D" uid="uid://ckd7ka2h150dt" path="res://Assets/Sprites/Mario_Small_Pole.png" id="20_0gusd"]
 [ext_resource type="Texture2D" uid="uid://bug7om4k0cuj8" path="res://Assets/Sprites/phineas jump.png" id="20_h4gth"]
+[ext_resource type="Texture2D" uid="uid://m2iow03hfguv" path="res://Assets/Sprites/phineas flag.png" id="21_i10lg"]
 [ext_resource type="Texture2D" uid="uid://cqxhw4uont1d3" path="res://Assets/Sprites/phineas run 1.png" id="21_mt53t"]
 [ext_resource type="Texture2D" uid="uid://cal7r48xqmfrt" path="res://Assets/Sprites/Mario_Small_Slide.png" id="24_3fbyf"]
 [ext_resource type="Script" path="res://Scripts/player_animated_sprite.gd" id="25_84ua1"]
@@ -184,7 +184,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("20_0gusd")
+"texture": ExtResource("21_i10lg")
 }],
 "loop": true,
 "name": &"small_pole",
@@ -271,7 +271,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"big_run"
+animation = &"small_pole"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
