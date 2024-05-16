@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqygieumuya0d"
-path="res://.godot/imported/Ferb Jump.png-c1baa3dddbc4dc23519668ca6eb3c74e.ctex"
+uid="uid://c3jsdskfxdrp8"
+path="res://.godot/imported/Ferb Pole.png-afa3dd09e38f6a4948d1a1d97fd0eb87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Ferb Jump.png"
-dest_files=["res://.godot/imported/Ferb Jump.png-c1baa3dddbc4dc23519668ca6eb3c74e.ctex"]
+source_file="res://Assets/Sprites/Ferb Pole.png"
+dest_files=["res://.godot/imported/Ferb Pole.png-afa3dd09e38f6a4948d1a1d97fd0eb87.ctex"]
 
 [params]
 
