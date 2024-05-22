@@ -270,7 +270,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"big_pole"
+animation = &"shoot"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
