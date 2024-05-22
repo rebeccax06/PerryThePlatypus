@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d17k40xueyuo5" path="res://Assets/Sprites/Ferb Run1.png" id="5_mlrqo"]
 [ext_resource type="Texture2D" uid="uid://bokhvnrjmehdd" path="res://Assets/Sprites/Ferb Run2.png" id="6_w2l0j"]
 [ext_resource type="Texture2D" uid="uid://jov57dp02lgt" path="res://Assets/Sprites/Ferb Run3.png" id="7_rbu7e"]
-[ext_resource type="Texture2D" uid="uid://k303fjvwyalc" path="res://Assets/Sprites/Mario_Big_Slide.png" id="8_tamvh"]
+[ext_resource type="Texture2D" uid="uid://c5cmepnhu21v3" path="res://Assets/Sprites/Ferb Slide.png" id="8_qj1d3"]
 [ext_resource type="Texture2D" uid="uid://4axg8se7m40x" path="res://Assets/Sprites/Mario_Shooting_Idle.png" id="9_thlrs"]
 [ext_resource type="Texture2D" uid="uid://vmaqhbv8xamx" path="res://Assets/Sprites/phineas death.png" id="10_sd5qy"]
 [ext_resource type="Texture2D" uid="uid://ugx1dv5u8m74" path="res://Assets/Sprites/Mario-Shooting.png" id="11_twa33"]
@@ -68,7 +68,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_tamvh")
+"texture": ExtResource("8_qj1d3")
 }],
 "loop": true,
 "name": &"big_slide",
@@ -270,7 +270,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"shoot"
+animation = &"big_slide"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
