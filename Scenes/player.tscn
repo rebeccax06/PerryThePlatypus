@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dl1yh0nllbjk5"]
+[gd_scene load_steps=26 format=3 uid="uid://dl1yh0nllbjk5"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_i28to"]
 [ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Assets/Sprites/Mario_Small_Idle.png" id="1_rbppx"]
@@ -23,7 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://bug7om4k0cuj8" path="res://Assets/Sprites/phineas jump.png" id="20_h4gth"]
 [ext_resource type="Texture2D" uid="uid://m2iow03hfguv" path="res://Assets/Sprites/phineas flag.png" id="21_i10lg"]
 [ext_resource type="Texture2D" uid="uid://cqxhw4uont1d3" path="res://Assets/Sprites/phineas run 1.png" id="21_mt53t"]
-[ext_resource type="Texture2D" uid="uid://cal7r48xqmfrt" path="res://Assets/Sprites/Mario_Small_Slide.png" id="24_3fbyf"]
 [ext_resource type="Script" path="res://Scripts/player_animated_sprite.gd" id="25_84ua1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pie86"]
@@ -199,7 +198,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("24_3fbyf")
+"texture": ExtResource("2_2abal")
 }],
 "loop": true,
 "name": &"small_slide",
@@ -270,7 +269,7 @@ script = ExtResource("1_i28to")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"big_slide"
+animation = &"small_slide"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]
