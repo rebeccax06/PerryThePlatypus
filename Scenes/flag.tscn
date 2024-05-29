@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/flag.gd" id="1_b5iq4"]
 [ext_resource type="Texture2D" uid="uid://d2wjjqv82whrs" path="res://Assets/Sprites/Flag.png" id="2_8ty1d"]
-[ext_resource type="Texture2D" uid="uid://ir6sodu1lnqy" path="res://Assets/Sprites/FlagPole.png" id="3_tbdh6"]
+[ext_resource type="Texture2D" uid="uid://cg0phaj4h27ok" path="res://Assets/Sprites/evil inc test.png" id="3_nwjao"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ak86b"]
 size = Vector2(5, 150)
@@ -17,7 +17,7 @@ texture = ExtResource("2_8ty1d")
 
 [node name="FlagPoleSprite" type="Sprite2D" parent="."]
 position = Vector2(0, -80)
-texture = ExtResource("3_tbdh6")
+texture = ExtResource("3_nwjao")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -80)
