@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cxakda6lnpdo1"]
 
-[ext_resource type="Texture2D" uid="uid://dl0kuv8e1o6n3" path="res://Assets/Sprites/Goomba_Flat.png" id="1_bm0jh"]
 [ext_resource type="Script" path="res://Scripts/goomba.gd" id="1_ft6iy"]
+[ext_resource type="Texture2D" uid="uid://uxtlaybxojgb" path="res://Assets/cuteDoofGoneByeBye.png" id="2_e7exm"]
 [ext_resource type="Texture2D" uid="uid://d7gorjyllgjq" path="res://Assets/Sprites/DoofyFeetLeft.png" id="3_j1mhe"]
 [ext_resource type="Texture2D" uid="uid://down8d7582nro" path="res://Assets/Sprites/DoofyFeetRight.png" id="4_cncpx"]
 
@@ -9,7 +9,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_bm0jh")
+"texture": ExtResource("2_e7exm")
 }],
 "loop": true,
 "name": &"dead",
@@ -28,7 +28,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o15yc"]
-size = Vector2(16, 16)
+size = Vector2(14, 9.625)
 
 [node name="Goomba" type="Area2D"]
 collision_layer = 4
@@ -36,11 +36,14 @@ collision_mask = 25
 script = ExtResource("1_ft6iy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 3.25)
+scale = Vector2(1, 1.05556)
 sprite_frames = SubResource("SpriteFrames_4x7jw")
-animation = &"walk"
+animation = &"dead"
 autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.1875)
 shape = SubResource("RectangleShape2D_o15yc")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
@@ -48,6 +51,8 @@ target_position = Vector2(0, 8)
 collision_mask = 18
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, 4.125)
+scale = Vector2(0.7, 0.3875)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
