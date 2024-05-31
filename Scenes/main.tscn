@@ -331,7 +331,7 @@ position = Vector2(1176, 128)
 position = Vector2(2504, 128)
 
 [node name="Flag" parent="." instance=ExtResource("11_hf8cw")]
-position = Vector2(3192, 69)
+position = Vector2(3191, 85)
 
 [node name="Decorations" type="Node" parent="."]
 
