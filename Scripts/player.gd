@@ -58,6 +58,10 @@ var is_on_path = false
 
 func _ready():
 	if SceneData.return_point != null && SceneData.return_point != Vector2.ZERO:
+		print(SceneData.return_point)
+		global_position = SceneData.return_point
+	else:
+		SceneData.return_point = Vector2(-175,62)
 		global_position = SceneData.return_point
 
 func _physics_process(delta):
@@ -213,6 +217,7 @@ func shoot():
 func handle_pipe_collision():
 	set_physics_process(false)
 	z_index = -3
+	
 	var pipe_tween = get_tree().create_tween()
 	pipe_tween.tween_property(self, "position", position + Vector2(0, 32), 1)
 	pipe_tween.tween_callback(switch_to_underground)

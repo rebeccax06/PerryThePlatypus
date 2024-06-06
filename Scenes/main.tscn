@@ -522,3 +522,5 @@ curve = SubResource("Curve2D_px65u")
 position = Vector2(0, -8)
 rotation = -0.876058
 rotates = false
+
+[connection signal="tree_entered" from="Castle" to="Player" method="_on_castle_tree_entered"]

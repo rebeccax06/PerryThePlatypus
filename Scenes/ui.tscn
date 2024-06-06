@@ -66,3 +66,9 @@ theme_override_font_sizes/font_size = 64
 text = "YOU WIN"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="NextLevelTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="NextLevelTimer" to="." method="_on_Next_level_timer_timeout"]

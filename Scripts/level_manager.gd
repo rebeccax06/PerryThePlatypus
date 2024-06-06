@@ -11,8 +11,10 @@ var coins = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
-	player.castle_entered.connect(ui.on_finish)
+	if ui:
+		player.castle_entered.connect(ui.on_finish)
+	else:
+		print("UI node is not assigned or not found.")
 	
 	if SceneData.points != 0:
 		ui.set_score(SceneData.points)
