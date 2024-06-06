@@ -60,9 +60,6 @@ func _ready():
 	if SceneData.return_point != null && SceneData.return_point != Vector2.ZERO:
 		print(SceneData.return_point)
 		global_position = SceneData.return_point
-	else:
-		SceneData.return_point = Vector2(-175,62)
-		global_position = SceneData.return_point
 
 func _physics_process(delta):
 	
@@ -243,7 +240,7 @@ func switch_to_main():
 	SceneData.coins = level_manager.coins
 	SceneData.points = level_manager.points 
 	get_tree().change_scene_to_file("res://Scenes/main.tscn")
-
+	
 func on_pole_hit():
 	set_physics_process(false)
 	velocity = Vector2.ZERO
@@ -264,6 +261,7 @@ func slide_down_finished():
 	reparent(castle_path)
 
 func land_down():
+	#print(get_tree().current_scene)
 	reparent(get_tree().root.get_node("main"))
 	var distance_to_marker = (land_down_marker.position - position).y
 	var land_tween = get_tree().create_tween()
@@ -279,6 +277,7 @@ func go_to_castle():
 	run_to_castle_tween.tween_callback(finish)
 
 func finish():
+	SceneData.return_point = Vector2(-175,62)
 	queue_free()
 	castle_entered.emit()
 
